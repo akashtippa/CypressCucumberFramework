@@ -1,0 +1,31 @@
+{
+  "name": "cypressautomationframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashboard": "npm run test -- --record --key 89e8c95b-423c-4e81-aea8-76fe647ae877",
+    "GreenKartTestcases": "npm run test -- --spec \"cypress/integration/Greenkart/*\""
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress\\integration\\examples\\BDD\\ecommerce\\eCommStepDef.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^5.2.6",
+    "cypress": "^7.5.0",
+    "cypress-cucumber-preprocessor": "^4.1.2",
+    "mocha": "^9.0.0",
+    "mochawesome": "^6.2.2",
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

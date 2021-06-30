@@ -1,0 +1,17 @@
+{
+  "defaultCommandTimeout": 8000,
+  "pageLoadTimeout": 30000,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://rahulshettyacademy.com",
+    "projectId": "zxi99y",
+    "testFiles": "**/*.feature"
+  },
+  "retries": {
+    "runMode": 1
+  },
+  "projectId": "8ejmd8",
+  "modifyObstructiveCode": true, 
+  "experimentalSourceRewriting":true, 
+  "chromeWebSecurity": true
+}
